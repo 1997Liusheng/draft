@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/time.css">
+    <script src="js/time.js"></script>
+</head>
+<body onload="changeLink()">
+
+<div id = "mybox">
+    <a >12341</a>
+    <h2 id ="old"> 今年你</h2>
+    <h3 id = "hours"> 今天 已经过去了</h3>
+    <h3 id = "weeks"> 本周 已经过去了</h3>
+    <h3 id = "month"> 本月 已经过去了</h3>
+    <h3 id = "year">  今年 已经过去了</h3>
+    <!DOCTYPE html>
+    <html lang="en" onclick="handleClickHtml()">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body onclick="handleBodyClick()">
+    <div id="div1" onclick="handleClick2()">
+        <button id="button1" onclick="handleClick1()">handleClick1</button>
+    </div>
+    <script>
+        function handleClick1(e) {
+            console.log('click1')
+        }
+        function handleClick2(e) {
+            console.log('click2')
+        }
+        function handleBodyClick(e) {
+            console.log('body clicked')
+        }
+        function handleClickHtml(e) {
+            console.log('html clicked')
+        }
+        document.addEventListener('click', e => {
+            console.log('document clicked')
+        })
+    </script>
+    </body>
+    </html>
+
+</div>
+
+
+</body>
+</html>
